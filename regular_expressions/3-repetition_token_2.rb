@@ -1,5 +1,2 @@
 #!/usr/bin/env ruby
-
-rg = /hbt{1,}n/
-matches = ARGV[0].scan(rg)
-puts matches.join
+puts ARGV[0].scan(/h[bt]+[bt]+n/).join

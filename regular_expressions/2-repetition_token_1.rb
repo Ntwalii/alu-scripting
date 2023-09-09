@@ -1,6 +1,2 @@
 #!/usr/bin/env ruby
-#matching one character
-
-rg = /hb{0,1}tn/
-matches = ARGV[0].scan(rg)
-puts matches.join
+puts ARGV[0].scan(/h[bt]?[bt]?n/).join
